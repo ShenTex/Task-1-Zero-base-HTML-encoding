@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+*{
+	font-family:SimHei;	
+}
+body{
+	background-color:rgba(222,222,222,1);
+	margin:0;
+	padding:0;
+}
+header{
+	width:100%;
+	min-width:650px;
+	height:60px;
+	background-color:rgba(40,40,40,1);
+	position:fixed;
+	top:0;	
+	z-index:9999;	/* 确保导航栏在最外层，不会被遮盖 */
+	/* position:absolute; */
+	/* float:top; */
+	/* margin:0; */
+	/* display:table-cell; */
+}
+.container{
+	position:relative;
+	top:60px;	
+}
+.hidden-title{
+	display:none;
+}
+header .logo{	
+	/*logo像素 117px*38px */
+	/* 	height:60px;
+	line-height:60px; */
+	/* vertical-align:middle; */
+	margin-top:11px;
+	margin-left:40px;
+	float:left;
+}
+header ul li{
+	width:100px;
+/* 	height:60px;
+	line-height:60px; */
+	margin-top:5px;
+	float:right;
+	/* text-align:center; */
+}
+header a{
+	color:rgba(255,255,255,1);	
+	font-size:0.8em;
+	/* display:inline; */
+	text-decoration:none;
+}
+.content{
+	/* position:relative;
+	top:66px; */
+	background-color:rgba(255,255,255,1);
+	margin:20px;
+	padding:20px 10px;
+	box-shadow:3px 3px 2px 2px rgba(99,104,107,1);
+}
+.content p{
+	line-height:150%;
+}
+.secondary-title{
+	color:rgba(99,104,107,1);
+}
+.writer, .publish-time, .description{
+	color:rgba(99,104,107,1);
+	font-size:14px;
+}
+.none-dot{
+	list-style-type:none;
+}
+#picture li {
+	width:160px;
+	text-align:center;
+	border:1px solid #D0D0D0;
+}
+.content li{
+	margin:10px;
+}
+#picture span{
+	display:block;
+	margin:10px 10px 0 10px;
+}
+#picture img{
+	width:136px;
+	height:90px;
+	margin:10px;
+}
+table{
+	width:100%;
+}
+table th{
+	color:rgba(255,255,255,1);	
+	background:rgba(40,40,40,1);
+}
+table #table{
+	background:rgba(204,204,204,1)
+}
+
+#register h2::before{
+	content:"|";
+	color:rgba(222,222,222,1);
+	font-size:32px;
+}
+#register-name{
+	font-size:14px;
+	float:left;
+	text-align:right;
+	margin:10px 10px 10px 350px;
+}
+#register-content{
+	font-size:14px;
+	float:left;
+	margin:10px;
+}
+#btn1{
+	width:100%;
+	font-size:16px;
+	margin:10px;
+	padding:10px;
+	color:rgba(255,255,255,1);
+	background-color:rgba(51,85,208,1);
+	border-radius:10px;
+	cursor:pointer;
+}
+footer{
+	width:100%;
+	height:70px;
+	font-size:0.9em;
+	color:rgba(255,255,255,1);
+	text-align:center;	
+	background-color:rgba(0,0,0,1);
+}
+
+
+
+
+
+
+
+
+
+
+
