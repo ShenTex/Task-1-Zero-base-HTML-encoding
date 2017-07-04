@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+div{
+	border:1px solid #999;
+	/*display: inline;*/
+	margin:0;
+}
+.main-body{
+	background-color:#eee;
+	padding:20px;
+	margin: 20px;
+/*	position: relative;*/
+}
+.left-content{
+	width:200px;
+	float:left;
+}
+.middle-content{
+	margin:0 142px 0 222px;
+/*	position: absolute;
+	left: 242px;
+	right:  162px;*/
+}
+.middle-content p{
+	word-wrap:break-word;
+	margin:20px;
+}
+.right-content{
+	width:80px;
+	padding:10px 20px;
+	float:right;
+}
+.image{
+	width:80px;
+	height: 80px;
+	margin:10px 0px;
+}
+.team-image{
+	width:80px;
+	height:80px;
+	margin:20px;
+}
+#team-name{
+	/* margin-bottom:60px; */
+}
+/*.clearfloat{
+	border:0;
+	clear: both;
+}*/
+.main-body::after{
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; 
+}
+@media screen and (min-width:462px)and (max-width:528px){
+	.middle-content{
+		float:left;
+		margin:-292px 142px 0 0px;
+	}
+}
+@media screen and (max-width:462px){
+	.middle-content{
+		float:left;
+		margin:-292px 142px 0 0px;
+	}
+	.main-body{
+		min-width:344px;
+	}
+}
+
